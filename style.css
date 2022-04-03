@@ -62,6 +62,10 @@ a:hover {
 	background-position: center;
 }
 
+.project-1 {
+	background-image: url('Images/Project-1.png');
+}
+
 .project-1:hover,
 .project-2:hover,
 .project-3:hover,

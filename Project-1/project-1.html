@@ -5,17 +5,55 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Project 1</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="project-1.css" />
 		<script defer src="project-1.js"></script>
 	</head>
 	<body>
 		<button class="btn-main"><em>All projects</em></button>
-		<h1>Days until New Years Eve</h1>
+		<div class="h1">
+      <h1 id="h1">Days until New Years Eve</h1>
+      <span id="edit"><i class="fa-solid fa-pen-to-square"></i></span>
+    </div>
+
 		<main>
 			<div><span class="days"></span>days</div>
 			<div><span class="hours"></span>hours</div>
 			<div><span class="mins"></span>mins</div>
 			<div><span class="seconds"></span>seconds</div>
+			<span<div class="form hidden">
+				<label for="name">Rename title:</label>
+				<input
+					type="text"
+					id="title"
+					name="title"
+					required
+					minlength="3"
+					maxlength="30"
+					size="24"
+					value="Days until "
+				/>
+				<label for="date">Target date:</label>
+				<input
+					type="text"
+					id="targetDate"
+					name="targetDate"
+					required
+					minlength="3"
+					maxlength="20"
+					size="24"
+					value="1 jan 2023"
+				/>
+				<button class="btn-edit" type="submit">Edit</button>
+			</div>
+      </span>
+      </main>
 		</main>
 	</body>
 </html>

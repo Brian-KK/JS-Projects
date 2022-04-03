@@ -1,11 +1,18 @@
 const btn_main = document.querySelector('.btn-main');
+const btn_edit = document.querySelector('.btn-edit');
 
 const days = document.querySelector('.days');
 const hours = document.querySelector('.hours');
 const mins = document.querySelector('.mins');
 const seconds = document.querySelector('.seconds');
 
-const inputDate = '1 jan 2023';
+const edit = document.getElementById('edit');
+const form = document.querySelector('.form');
+const title = document.getElementById('title');
+const targetDate = document.getElementById('targetDate');
+const h1 = document.getElementById('h1');
+
+let inputDate = '1 jan 2023';
 
 const countdown = function () {
 	const targetDate = new Date(inputDate);
@@ -24,7 +31,7 @@ const countdown = function () {
 };
 
 const formatTime = function (time) {
-	return time < 10 ? `0${time}` : time;
+	return time < 10 && time >= 0 ? `0${time}` : time;
 };
 
 setInterval(() => {
@@ -33,4 +40,16 @@ setInterval(() => {
 
 btn_main.addEventListener('click', function () {
 	window.location = '../index.html';
+});
+
+edit.addEventListener('click', function () {
+	form.classList.toggle('hidden');
+	edit.classList.toggle('hidden');
+});
+
+btn_edit.addEventListener('click', function () {
+	form.classList.toggle('hidden');
+	edit.classList.toggle('hidden');
+	h1.innerText = title.value;
+	inputDate = targetDate.value;
 });

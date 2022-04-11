@@ -45,10 +45,7 @@ a:hover {
 .project-1,
 .project-2,
 .project-3,
-.project-4,
-.project-5,
-.project-6,
-.project-7 {
+.project-4 {
 	color: transparent;
 	border: 1px solid #b6b0b0;
 	box-shadow: 1px 2px 7px 2px #a4a4a4;
@@ -63,16 +60,17 @@ a:hover {
 }
 
 .project-1 {
-	background-image: url('Images/Project-1.png');
+	background-image: url('Images/Days_until.png');
+}
+
+.project-2 {
+	background-image: url('Images/JS_Game.png');
 }
 
 .project-1:hover,
 .project-2:hover,
 .project-3:hover,
-.project-4:hover,
-.project-5:hover,
-.project-6:hover,
-.project-7:hover {
+.project-4:hover {
 	cursor: pointer;
 	transform: translateY(-10px);
 }

@@ -4,12 +4,34 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Project 1</title>
+		<title>JS Guess Game</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="project-2.css" />
 		<script defer src="project-2.js"></script>
 	</head>
 	<body>
 		<button class="btn-main">All projects</button>
-		<h1>Project 2</h1>
+		<div class="container">
+			<div class="top-section">
+				<button class="againBtn">Again!</button>
+				<p class="gameCondition">(Between 1 and 20)</p>
+				<h1 class="header">Guess my number!</h1>
+				<h3 class="secretNumber">?</h3>
+			</div>
+			<div class="bottom-section">
+				<div class="input">
+					<input type="number" class="inputValue" />
+					<button class="checkBtn">Check!</button>
+				</div>
+				<div class="results">
+					<p class="message"> Start guessing... </p>
+					<p>💯 Score: <span class="score">20</span></p>
+					<p>🎖 Hiscore: <span class="hiScore">0</span></p>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

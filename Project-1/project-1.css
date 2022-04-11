@@ -22,6 +22,7 @@ body {
 	padding: 8px 16px;
 	letter-spacing: 0.9px;
 	background-color: rgba(112, 150, 182, 0.6);
+	font-style: italic;
 }
 
 .btn-main:hover {
